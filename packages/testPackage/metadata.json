@@ -3,6 +3,6 @@
     "author":"server",
     "latest":"ver1",
     "verstions":{
-        "ver1":"testPackage/ver1"
+        "ver1":"packages/testPackage/ver1"
     }
 }
