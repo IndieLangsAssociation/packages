@@ -1,6 +1,7 @@
 {
     "Name":"testPackage",
     "author":"server",
+    "latest":"ver1",
     "verstions":{
         "ver1":"testPackage/ver1"
     }
