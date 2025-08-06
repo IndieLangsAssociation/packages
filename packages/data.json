@@ -1,3 +1,5 @@
 {
-  "packages":{"testPackage":"packages/testPackage"}
+  "packages":{
+    "testPackage":"packages/testPackage"
+  }
 }
