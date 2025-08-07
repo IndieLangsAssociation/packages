@@ -1,8 +1,8 @@
 {
     "Name":"stdRuby",
-    "author":"server",
+    "author":"Back_meet",
     "latest":"ver1",
     "verstions":{
-        "ver1":"packages/testPackage/ver1"
+        "ver1":"packages/stdRuby/ver1"
     }
 }
