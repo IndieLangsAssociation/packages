@@ -1,5 +1,6 @@
 {
   "packages":{
-    "testPackage":"packages/testPackage"
+    "testPackage":"packages/testPackage",
+    "stdRuby":"packages/stdRuby"
   }
 }
