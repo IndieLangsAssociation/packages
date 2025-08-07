@@ -1,0 +1,8 @@
+{
+    "Name":"stdRuby",
+    "author":"server",
+    "latest":"ver1",
+    "verstions":{
+        "ver1":"packages/testPackage/ver1"
+    }
+}
