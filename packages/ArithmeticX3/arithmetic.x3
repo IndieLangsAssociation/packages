@@ -1,0 +1,43 @@
+reg str VERSION "1.1.1"
+reg str MODULE "Arithmetic"
+def add a b
+    reg int r $a + $b
+    return $r
+fncend
+
+def sub a b
+    reg int r $a - $b
+    return $r
+fncend
+
+def mul a b
+    reg int r $a * $b
+    return $r
+fncend
+
+def div a b
+    if $b == 0
+        exit "Division by zero" 
+        return 0
+    end
+    reg int r $a / $b
+    return $r
+fncend
+
+def pow a b
+    reg int r $a ** $b
+    return $r
+fncend
+
+def sqrt n
+    reg int r $n ** 0.5
+    return $r
+fncend
+
+def abs n
+    if $n < 0
+        reg int r $n * -1
+        return $r
+    end
+    return $n
+fncend
