@@ -1,43 +1,45 @@
-reg str VERSION "1.1.1"
+reg str VERSION "1.1.3"
 reg str MODULE "Arithmetic"
-def add a b
-    reg int r $a + $b
+setclientrule pedl
+//updated so there will be no variable collisions (hopefully) #2.9.25
+def add qwertyuiop09 asdfghjkl0
+    reg int r $qwertyuiop09 + $asdfghjkl0
     return $r
 fncend
 
-def sub a b
-    reg int r $a - $b
+def sub qwertyuiop09 asdfghjkl0
+    reg int r $qwertyuiop09 - $asdfghjkl0
     return $r
 fncend
 
-def mul a b
-    reg int r $a * $b
+def mul qwertyuiop09 asdfghjkl0
+    reg int r $qwertyuiop09 * $asdfghjkl0
     return $r
 fncend
 
-def div a b
-    if $b == 0
+def div qwertyuiop09 asdfghjkl0
+    if $asdfghjkl0 == 0
         exit "Division by zero" 
         return 0
     end
-    reg int r $a / $b
+    reg int r $qwertyuiop09 / $asdfghjkl0
     return $r
 fncend
 
-def pow a b
-    reg int r $a ** $b
+def pow qwertyuiop09 asdfghjkl0
+    reg int r $qwertyuiop09 ** $asdfghjkl0
     return $r
 fncend
 
-def sqrt n
-    reg int r $n ** 0.5
+def sqrt zxcvbn17
+    reg int r $zxcvbn17 ** 0.5
     return $r
 fncend
 
-def abs n
-    if $n < 0
-        reg int r $n * -1
+def abs zxcvbn17
+    if $zxcvbn17 < 0
+        reg int r $zxcvbn17 * -1
         return $r
     end
-    return $n
+    return $zxcvbn17
 fncend
