@@ -1,7 +1,7 @@
-reg str VERSION "1.1.3"
+reg str VERSION "1.1.5"
 reg str MODULE "Arithmetic"
 setclientrule pedl
-//updated so there will be no variable collisions (hopefully) #2.9.25
+//updated so there will be no variable collisions (hopefully)
 def add qwertyuiop09 asdfghjkl0
     reg int r $qwertyuiop09 + $asdfghjkl0
     return $r
@@ -43,3 +43,42 @@ def abs zxcvbn17
     end
     return $zxcvbn17
 fncend
+
+def cos raventx3sthecoolhehehe
+    while $raventx3sthecoolhehehe > 3.14159
+        reg float raventx3sthecoolhehehe $raventx3sthecoolhehehe - 6.28318
+    end
+    while $raventx3sthecoolhehehe < -3.14159
+        reg float raventx3sthecoolhehehe $raventx3sthecoolhehehe + 6.28318
+    end
+
+    reg float x $raventx3sthecoolhehehe
+
+    reg float term1 1.0
+    reg float term2 (($x*$x) / 2.0)
+    reg float term3 (($x*$x*$x*$x) / 24.0)
+    reg float term4 (($x*$x*$x*$x*$x*$x) / 720.0)
+    reg float term5 (($x*$x*$x*$x*$x*$x*$x*$x) / 40320.0)
+
+    reg float cos_out ($term1 - $term2 + $term3 - $term4 + $term5)
+    return $cos_out
+fncend
+
+def sin raventx3sthecoolhehehe2
+    while $raventx3sthecoolhehehe2 > 3.14159
+        reg float raventx3sthecoolhehehe2 $raventx3sthecoolhehehe2 - 6.28318
+    end
+    while $raventx3sthecoolhehehe2 < -3.14159
+        reg float raventx3sthecoolhehehe2 $raventx3sthecoolhehehe2 + 6.28318
+    end
+
+    reg float x $raventx3sthecoolhehehe2
+
+    reg float term1 $x
+    reg float term2 (($x*$x*$x) / 6.0)         
+    reg float term3 (($x*$x*$x*$x*$x) / 120.0)  
+    reg float term4 (($x*$x*$x*$x*$x*$x*$x) / 5040.0) 
+    reg float sin_out ($term1 - $term2 + $term3 - $term4)
+    return $sin_out
+fncend
+
